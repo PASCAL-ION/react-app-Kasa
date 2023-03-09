@@ -1,0 +1,33 @@
+.collapse-wrapper {
+  margin-bottom: 1rem;
+  margin: 30px auto;
+  width: 80%;
+}
+
+.collapse-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FF6060;
+  color: #F6F6F6;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 2.4rem;
+  font-weight: 400;
+  padding: 0.5rem 1.5rem;
+  width: 100%;
+/*   outline: none;
+  transition: background-color 0.2s ease; */
+}
+
+.collapse-content {
+  color: #FF6060;
+  background-color: #F6F6F6;
+  font-size: 2.4rem;
+  font-family: Monserat;
+  padding: 1rem;
+  width: 100%;
+  line-height: 3.4rem;
+  /* transition: height 0.2s ease; */
+}

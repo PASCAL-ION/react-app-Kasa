@@ -1,3 +1,9 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 .wrapper{
     display: flex;
     justify-content: space-between;
@@ -7,27 +13,31 @@
     margin: 20px auto 0 auto;
     
 
-    .nav{
+    &__nav{
         display: flex;
         justify-content: flex-end;
         align-items: center;
         
-        li{
+        a.active{
+        text-decoration: underline;
+        cursor: pointer;
+        }
+
+        &__link{
             font-size: 1.3rem;
             text-transform: uppercase;
             list-style-type: none;
             color:#FF6060;
+            text-decoration: none;
             &:last-child{
                 margin-left: 30px;
                 width: auto;
             }
-            &:hover{
-                text-decoration: underline;
-            }
         }
 
     }
-    .logo{
+
+    &__logo{
         max-width: 43%;
     }
 }
@@ -69,7 +79,7 @@
         .nav{
             width: 35%;
             li{
-                font-size: 2.4rem;
+                font-size: 3rem;
             }
         }
     }
