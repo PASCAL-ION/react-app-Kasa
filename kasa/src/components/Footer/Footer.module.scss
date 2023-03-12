@@ -1,0 +1,27 @@
+
+
+.container{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 200px;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 3rem 0 1.5rem 0;
+    
+}
+
+.logo{
+    margin-bottom: 2rem;
+    filter: brightness(10); //rendre le logo blanc
+}
+
+.text{
+    font-size: clamp(1.2rem, 4vw, 2.4rem);
+    font-weight: 500;
+}

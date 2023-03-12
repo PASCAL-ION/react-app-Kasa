@@ -1,0 +1,23 @@
+.container{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.errorCode{
+    font-size: clamp(9.6rem, 10vw, 28.8rem);
+    color: #FF6060;
+    margin-bottom: 5%;
+}
+
+.errorMessage{
+    font-size: clamp(1.8rem, 5vw, 3.6rem);
+    color: #FF6060;
+}
+
+.redirectLink{
+    margin-top: 50%;
+    font-size: clamp(1.4rem, 3vw, 1.8rem);
+    color: #FF6060;
+}

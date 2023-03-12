@@ -1,0 +1,18 @@
+.star{
+    width: clamp(15px, 4vw, 30px);
+}
+
+.starsContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    max-width: 190px;
+}
+
+@media (min-width: 1024px) {
+
+    .starsContainer{
+        justify-content: flex-end;
+    }
+}

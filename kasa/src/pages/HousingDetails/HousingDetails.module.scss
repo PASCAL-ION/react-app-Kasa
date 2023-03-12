@@ -1,0 +1,108 @@
+@import "../../components/mixins.scss";
+
+.main{
+    width: calc(100% - 10%);
+    margin: 0 auto;
+}
+
+.mainInfoContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+
+    @include media-min(1024px){
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+    }
+}
+
+
+.title{
+    font-size: clamp(1.8rem, 5.5vw ,3.6rem);
+    font-weight: 700;
+    color: #FF6060; 
+    width: 100%;
+}
+
+.location{
+    color: #FF6060;
+    font-size: clamp(1.4rem, 3vw ,1.8rem);
+    margin-top: 10px;
+    width: 100%;
+}
+
+.tags{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 365px;
+    margin-top: 10px;
+    justify-content: flex-start;
+    gap: 10px;
+
+    .tag{
+        //centrer le texte
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        //-----------------
+        max-width: 115px;
+        font-size: clamp(1rem, 2.5vw, 1.4rem);
+        background: #FF6060;
+        border-radius: 5px;
+        color: white;
+        padding: 5px 8px;
+        /* padding: 5px 10px; */
+
+    }
+}
+
+.title_location_tags{
+    width: calc(100% - 20%);
+
+    @include media-min(1024px){
+       width: 200%;
+    }
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    width: clamp(135px, 10vw, 165px);
+
+    @include media-min(1024px){
+        order: -1;
+    }
+    
+    .photo{
+        width: clamp(32px, 6vw, 64px);
+        border-radius: 50%;
+    }
+    
+    .name{
+        font-size: clamp(1.2rem, 2vw, 1.8rem);
+        color: #FF6060;
+        width: 50%;
+    }
+}
+
+.profile_rating{
+    display: flex;
+    width: 100%;
+
+    @include media-min(1024px){
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+}
+
+.collapses{
+    @include media-min(1024px){
+        display: flex;
+        flex-direction: row;
+        gap: 76px;
+    }
+}

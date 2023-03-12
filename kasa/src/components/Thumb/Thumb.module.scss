@@ -1,0 +1,60 @@
+@import '../mixins.scss';
+
+.thumbsContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 70px;
+    width: calc(100% - 10%);
+    background: rgb(224, 221, 221);
+    margin: 5% auto;
+    border-radius: 10px;
+    padding: 5% 2%;
+
+    @include media-max(425px){
+        background: white;
+    }
+}
+
+
+.thumb{
+
+    position: relative;
+    border-radius: 10px;
+
+    &::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 50%; 
+        background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.849));
+        pointer-events: none;
+        border-radius: 10px;
+    }
+}
+
+.thumbImg{
+    width: 340px;
+    height: 340px;
+    border-radius: 10px;
+    object-fit: cover;
+    
+
+    @include media-max(425px){
+        width: 335px;
+        height: 335px;
+    }
+}
+
+.thumbTitle{
+    position: absolute;
+    top: 82%;
+    left: 5%;
+    color: rgb(238, 237, 237);
+    font-weight: 500;
+    font-size: 1.8rem;
+    z-index: 1;
+}

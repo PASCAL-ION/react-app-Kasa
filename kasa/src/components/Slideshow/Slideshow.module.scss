@@ -1,0 +1,48 @@
+.container{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.image{
+    width: 100%;
+    object-fit: cover;
+}
+
+.container, .image{
+    max-height: 415px;
+    min-height: 255px;
+    border-radius: 10px;
+}
+
+.leftBtn, .rightBtn{
+    position: absolute;
+    z-index: 1;
+    background: none;
+    border: none;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.6;
+    cursor: pointer;
+
+    &:hover{
+        opacity: 1;
+    }
+}
+
+.leftBtn{
+    left: 2%;
+}
+
+.rightBtn{
+    right: 2%;
+}
+
+.slideCouner{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.8rem;
+    color: #FFFFFF;
+}

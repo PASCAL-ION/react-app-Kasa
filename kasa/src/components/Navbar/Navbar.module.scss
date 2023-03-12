@@ -1,0 +1,46 @@
+@import "../mixins.scss";
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 10%);
+    margin: 0 auto;
+    padding: 20px 0;
+    margin-bottom: 4%;
+}
+
+.logo{
+    width: clamp(14rem, 20vw, 30rem);
+    height: 100%;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+
+    @include media-min(376px){
+        width: 40%;
+    }
+
+    @include media-min(768px){
+        width: 35%;
+    }
+
+    @include media-min(1024px){
+        width: 30%;
+    }
+
+    @include media-min(1440px){
+        width: 20%;
+    }
+
+}
+
+.link{
+    text-decoration: none;
+    color: #FF6060;
+    font-size: clamp(1.5rem, 4vw, 2.6rem);
+}

@@ -1,12 +1,9 @@
-import Home from './pages/Home'
-import About from './pages/About'
-import Header from './components/Header'
-import Banner from './components/Banner'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Home from './pages/Home/Home'
+import About from './pages/About/About'
 import React, {useState, useEffect} from 'react'
-import Footer from './components/Footer'
-import HousingDetails from './pages/HousingDetails'
-import Page404 from './pages/Page404'
+import HousingDetails from './pages/HousingDetails/HousingDetails'
+import Page404 from './pages/Page404/Page404'
 
 function App() {
 
@@ -37,20 +34,12 @@ function App() {
   } else {
     return (
       <BrowserRouter>
-        <header>
-          <Header />
-        </header>
-        <main>
-          <Routes path='/'>
-            <Route index element={<Home data={ items }/>} />
-            <Route path='about' element={<About data={ items }/>} />
-            <Route path='details/:id' element={<HousingDetails data={ items }/>} />
-            <Route path='/*' element={<Page404 />}/>
-          </Routes>
-        </main>
-        <footer>
-          <Footer />
-        </footer>
+        <Routes path='/'>
+          <Route index element={<Home data={ items }/>} />
+          <Route path='about' element={<About data={ items }/>} />
+          <Route path='details/:id' element={<HousingDetails data={ items }/>} />
+          <Route path='/*' element={<Page404 />}/>
+        </Routes>
       </BrowserRouter>
       )
   }
