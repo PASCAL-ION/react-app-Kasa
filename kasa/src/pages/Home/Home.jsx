@@ -13,9 +13,7 @@ function Home(props) {
                 <Header />
                 <Banner img={bannerImg}/>
             </header>
-            <body>
-                <Thumb data={props.data}/>
-            </body>
+            <Thumb data={props.data}/>
             <footer>
                 <Footer />
             </footer>

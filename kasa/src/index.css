@@ -2,6 +2,9 @@
   font-size: 10px;
 }
 
+ul{
+  list-style: none;
+}
 
 *{
   box-sizing: border-box;

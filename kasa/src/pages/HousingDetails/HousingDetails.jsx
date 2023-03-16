@@ -12,15 +12,11 @@ function HousingDetails({ data }) {
 
     const params = useParams()
     const housingFound = data.find(element => element.id === params.id)
-    console.log(housingFound);
 
     if (housingFound !== undefined) { //si un id est trouvé
         return (
             <>
-            <header>
                 <Navbar />
-            </header>
-            <body>
                 <div className={style.main}>
                     <Slideshow>
                         <img src={housingFound.pictures} alt="" />
@@ -31,7 +27,7 @@ function HousingDetails({ data }) {
                             <p className={style.location}>{housingFound.location}</p>
                             <div className={style.tags}>
                                 {housingFound.tags.map(tag => {
-                                    return <span className={style.tag} key={`${tag}`+1}>{tag}</span>
+                                    return <span key={tag} className={style.item}>{tag}</span>
                                 })}
                             </div>
                         </div>
@@ -48,18 +44,15 @@ function HousingDetails({ data }) {
                             <p>{housingFound.description}</p>
                         </Collapse>
                         <Collapse title="Equipements">
-                            <p>
+                            <ul>
                                 {housingFound.equipments.map(equipment => {
-                                   return <ul>{equipment}</ul>
+                                   return <li key={equipment}>{equipment}</li>
                                 })}
-                            </p>
+                            </ul>
                         </Collapse>
                     </div>
                 </div>
-            </body>
-            <footer>
                 <Footer />
-            </footer>
             </>
             
         )

@@ -8,7 +8,6 @@ function Slideshow({children}) {
     const [curentPicture, setCurentPicture] = useState(0)
 
     const pictures = children.props.src
-    console.log(pictures.length);
 
   return (
     <div className={style.container}>

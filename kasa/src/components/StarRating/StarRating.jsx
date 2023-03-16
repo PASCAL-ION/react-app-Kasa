@@ -13,12 +13,12 @@ function StarRating({ rating }) {
     const emptyStarsArray = []
     const fullStarsArray = [];
     for (let i = 0; i < numFullStars; i++) {
-      fullStarsArray.push( <img className={style.star} src={fullStar} alt="full star" /> )
+      fullStarsArray.push( <img key={i} className={style.star} src={fullStar} alt="full star" /> )
     }
     setStars(fullStarsArray);
 
     for (let i = 0; i < numEmptyStars; i++) {
-        emptyStarsArray.push( <img className={style.star} src={emptyStar} alt="empty star" /> )
+        emptyStarsArray.push( <img key={i} className={style.star} src={emptyStar} alt="empty star" /> )
     }
     setEmptyStars(emptyStarsArray)
   }, [rating]); //en second param on declare un tableau de dépendances "[rating]" qui spécifie a react a quel moment il doit éxécuter a nouveau le composant. 

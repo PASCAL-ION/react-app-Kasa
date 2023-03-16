@@ -8,10 +8,7 @@ import style from './Page404.module.scss'
 export default function Page404() {
   return (
     <>
-      <header>
         <Navbar />
-      </header>
-      <body>
         <div className={style.container}>
           <h1 className={style.errorCode}>404</h1>
           <p className={style.errorMessage}>Oups! La page que vous demandez n'existe pas</p>
@@ -19,10 +16,7 @@ export default function Page404() {
             <p className={style.redirectLink}>Retourner sur la page d’accueil</p>
           </NavLink>
         </div>
-      </body>
-      <footer>
         <Footer />
-      </footer>
     </>
   )
 }

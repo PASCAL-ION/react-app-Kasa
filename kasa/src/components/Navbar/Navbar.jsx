@@ -13,7 +13,7 @@ function Navbar() {
                 >
                     Accueil
                 </NavLink>
-                <NavLink to="about" className={style.link}
+                <NavLink to="/about" className={style.link}
                     style={({ isActive }) => ({ 
                         textDecoration: isActive ? 'underline' : 'none' })}
                 >
@@ -23,5 +23,6 @@ function Navbar() {
         </div>
         )
 }
+
 
 export default Navbar
