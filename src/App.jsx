@@ -1,9 +1,7 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Home from './pages/Home/Home'
-import About from './pages/About/About'
 import React, {useState, useEffect} from 'react'
-import HousingDetails from './pages/HousingDetails/HousingDetails'
-import Page404 from './pages/Page404/Page404'
+import Routes from './Routing/Routes'
+
+
 
 function App() {
 
@@ -20,11 +18,12 @@ function App() {
           setItems(data);
         },
         (error) => { //si la requête échoue on met a jour les variables d'état "isLoaded" et "error"
-          setIsLoaded(true);
+          setIsLoaded(false);
           setError(error);
         }
       )
   }, [])
+
 
   if (error) { //si une erreur s'est produite lors de la requête
     return <div>Erreur : {error.message}</div>;
@@ -32,21 +31,15 @@ function App() {
     return <div>Chargement...</div>;
   } else {
     return (
-      <BrowserRouter>
-        <Routes path='/'>
-          <Route index element={<Home data={ items }/>} />
-          <Route path='about' element={<About data={ items }/>} />
-          <Route path='details/:id' element={<HousingDetails data={ items }/>} />
-          <Route path='/*' element={<Page404 />}/>
-        </Routes>
-      </BrowserRouter>
+      <Routes items={items}/>
       )
+    }
   }
-}
-
-
-export default App
-
+  
+  
+  export default App
+  
+  
 
 
 

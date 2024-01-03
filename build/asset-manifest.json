@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/react-app-Kasa/static/css/main.c650c819.css",
+    "main.js": "/react-app-Kasa/static/js/main.57988bf5.js",
+    "static/js/787.55560dbc.chunk.js": "/react-app-Kasa/static/js/787.55560dbc.chunk.js",
+    "static/media/banner2.jpg": "/react-app-Kasa/static/media/banner2.be33cd35fc995b84e18a.jpg",
+    "static/media/banner.jpg": "/react-app-Kasa/static/media/banner.053687a54587bf187cfc.jpg",
+    "static/media/logo.svg": "/react-app-Kasa/static/media/logo.72b9b893a0e5bd1384ab232bc6228400.svg",
+    "index.html": "/react-app-Kasa/index.html",
+    "static/media/arrow_down.svg": "/react-app-Kasa/static/media/arrow_down.b052dd29e3a2bab76700eee79e133c37.svg",
+    "static/media/arrow_up.svg": "/react-app-Kasa/static/media/arrow_up.557045ea3cccdf4a6a60a53481c321e2.svg",
+    "static/media/arrow_right.svg": "/react-app-Kasa/static/media/arrow_right.88153a5d119c2744ffe34dca1ef843df.svg",
+    "static/media/arrow_left.svg": "/react-app-Kasa/static/media/arrow_left.19918a1634b1441a25ae0b50e6b1f85b.svg",
+    "static/media/emptyStar.svg": "/react-app-Kasa/static/media/emptyStar.7e4ba6032d7d80ecc30aa389973cef95.svg",
+    "static/media/fullStar.svg": "/react-app-Kasa/static/media/fullStar.6430150c126a3adf92c132c52c9c7428.svg",
+    "main.c650c819.css.map": "/react-app-Kasa/static/css/main.c650c819.css.map",
+    "main.57988bf5.js.map": "/react-app-Kasa/static/js/main.57988bf5.js.map",
+    "787.55560dbc.chunk.js.map": "/react-app-Kasa/static/js/787.55560dbc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c650c819.css",
+    "static/js/main.57988bf5.js"
+  ]
+}

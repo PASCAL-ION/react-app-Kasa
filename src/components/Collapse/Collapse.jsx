@@ -13,7 +13,7 @@ const Collapse = ({ title, children }) => {
   return (
     <div className="collapse-wrapper">
       <button className="collapse-button" onClick={handleToggle}>
-        {title} {isOpen ? <img src={arrowDown}/> : <img src={arrowUp}/>}
+        {title} {isOpen ? <img src={arrowDown} alt=""/> : <img src={arrowUp} alt=""/>}
       </button>
       {isOpen && <div className="collapse-content">{children}</div>}
     </div>

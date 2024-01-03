@@ -7,7 +7,7 @@ function Slideshow({children}) {
 
     const [curentPicture, setCurentPicture] = useState(0)
 
-    const pictures = children.props.src
+    const pictures = children.props.src //tableau contenant les photos
 
   return (
     <div className={style.container}>

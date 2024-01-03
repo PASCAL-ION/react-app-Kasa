@@ -2,13 +2,12 @@ import React from 'react'
 import Banner from '../../components/Banner/Banner'
 import Collapse from '../../components/Collapse/Collapse'
 import Footer from '../../components/Footer/Footer'
-import Navbar from '../../components/Navbar/Navbar'
 import bannerImg2 from '../../assets/banner2.jpg'
 
 function About() {
+
     return(
         <>
-                <Navbar />
                 <Banner img={bannerImg2}/>
                 <Collapse title="Fiabilité">
                     <p>Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes.</p>

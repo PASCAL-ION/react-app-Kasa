@@ -3,7 +3,6 @@ import {useParams} from 'react-router-dom'
 import Slideshow from '../../components/Slideshow/Slideshow'
 import style from './HousingDetails.module.scss'
 import Page404 from '../Page404/Page404'
-import Navbar from '../../components/Navbar/Navbar'
 import Footer from '../../components/Footer/Footer'
 import StarRating from '../../components/StarRating/StarRating'
 import Collapse from '../../components/Collapse/Collapse'
@@ -16,7 +15,6 @@ function HousingDetails({ data }) {
     if (housingFound !== undefined) { //si un id est trouvé
         return (
             <>
-                <Navbar />
                 <div className={style.main}>
                     <Slideshow>
                         <img src={housingFound.pictures} alt="" />
