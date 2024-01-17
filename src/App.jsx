@@ -10,7 +10,7 @@ function App() {
   const [items, setItems] = useState([]); //items vas servir pour stocker les données reçues avec la requête fetch. Initialisée avec un tableau vide pour mieux manipuler les données  
   
   useEffect(() => { //le hook useEffect permet de réaliser une action lorsque le composant est affiché
-    fetch("/logements.json")
+    fetch("/react-app-Kasa/logements.json")
       .then(res => res.json())
       .then(
         (data) => { //si la requête réussi on met a jour les variables d'état "isLoaded" et "items"

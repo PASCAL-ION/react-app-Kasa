@@ -7,7 +7,7 @@ function Navbar() {
         <div className={style.container}>
             <img src={logo} alt='kasa logo' className={style.logo}></img>
             <nav className={style.nav}>
-                <NavLink to="/" className={style.link}
+                <NavLink to="/react-app-Kasa" className={style.link}
                     style={({ isActive }) => ({ 
                         textDecoration: isActive ? 'underline' : 'none' })}
                 >

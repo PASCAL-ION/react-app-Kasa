@@ -11,7 +11,7 @@ import RootLayout from '../layouts/RootLayout'
 export default function Routes({items}) {
     const router = createBrowserRouter(
         createRoutesFromElements(
-          <Route path='/' element={<RootLayout/>}>
+          <Route path='/react-app-Kasa' element={<RootLayout/>}>
             <Route index element={<Home data={ items }/>} />
             <Route path='about' element={<About data={ items }/>} />
             <Route path='details/:id' element={<HousingDetails data={ items }/>} />
