@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-app-Kasa/static/css/main.c650c819.css",
-    "main.js": "/react-app-Kasa/static/js/main.73f3c5e7.js",
+    "main.js": "/react-app-Kasa/static/js/main.96309df2.js",
     "static/js/787.55560dbc.chunk.js": "/react-app-Kasa/static/js/787.55560dbc.chunk.js",
     "static/media/banner2.jpg": "/react-app-Kasa/static/media/banner2.be33cd35fc995b84e18a.jpg",
     "static/media/banner.jpg": "/react-app-Kasa/static/media/banner.053687a54587bf187cfc.jpg",
@@ -14,11 +14,11 @@
     "static/media/emptyStar.svg": "/react-app-Kasa/static/media/emptyStar.7e4ba6032d7d80ecc30aa389973cef95.svg",
     "static/media/fullStar.svg": "/react-app-Kasa/static/media/fullStar.6430150c126a3adf92c132c52c9c7428.svg",
     "main.c650c819.css.map": "/react-app-Kasa/static/css/main.c650c819.css.map",
-    "main.73f3c5e7.js.map": "/react-app-Kasa/static/js/main.73f3c5e7.js.map",
+    "main.96309df2.js.map": "/react-app-Kasa/static/js/main.96309df2.js.map",
     "787.55560dbc.chunk.js.map": "/react-app-Kasa/static/js/787.55560dbc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c650c819.css",
-    "static/js/main.73f3c5e7.js"
+    "static/js/main.96309df2.js"
   ]
 }
